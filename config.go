@@ -13,7 +13,7 @@ type Config struct {
 
 var appConf *Config
 
-func loadConf() {
+func LoadAppConfig() {
 	log.Println("Loading server config ...")
 	viper.AddConfigPath(".")
 	viper.SetConfigName("config")
